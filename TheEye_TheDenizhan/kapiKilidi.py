@@ -76,7 +76,7 @@ def zil():
 
 
 def send_telegram_message():
-    telegram_url = f'https://api.telegram.org/bot6835603068:AAFYzX0veRpNagQuYGCWDigrw_DO52ltpMA/sendMessage'
+    telegram_url = f'https://api.telegram.org/Token/sendMessage'
     message_text = 'Kapida biri var.'
 
     # Replace with your Telegram chat ID
