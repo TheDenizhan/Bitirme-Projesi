@@ -1,0 +1,51 @@
+<Button>
+    font_size:32
+    background_normal:''
+    background_color:(1,0,0,1)
+    color: 0, 0, 0, 1
+    font_name: 'Arial'
+    italic: True
+    underline: True
+<TextInput>
+    font_size:32
+    background_normal:''
+    background_color:(0,0,1,1)
+<MyLayout>
+    #Background Color
+    canvas.before:
+        Color:
+            rgba:(1,1,1,1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        padding:10
+        spacing:10
+
+        Label:
+            text:"Name"
+            font_size:45
+            background_color:(182/255,66/255,254/255,1)
+            canvas.before:
+                Color:
+                    rgba:self.background_color
+                Rectangle:
+                    size:self.size
+                    pos:self.pos
+            #Text Properties
+            color:(0,1,0,1)
+            bold:True
+            outline_color:(0,0,0)
+            outline_width:4
+        TextInput:
+            multiline:False
+        Label:
+            text:"Favorite Pizza"
+        TextInput:
+            multiline:False
+        Button:
+            text:"Submit"
+        Button:
+            text:"Clear"

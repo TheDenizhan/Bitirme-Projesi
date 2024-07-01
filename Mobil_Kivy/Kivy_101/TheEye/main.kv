@@ -1,0 +1,21 @@
+MDScreen:
+    md_bg_color: self.theme_cls.secondaryContainerColor
+
+    MDTopAppBar:
+        type: "small"
+        size_hint_x: .8
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDTopAppBarLeadingButtonContainer:
+
+            MDActionTopAppBarButton:
+                icon: "menu"
+
+        MDTopAppBarTitle:
+            text: "AppBar small"
+            pos_hint: {"center_x": .5}
+
+        MDTopAppBarTrailingButtonContainer:
+
+            MDActionTopAppBarButton:
+                icon: "account-circle-outline"

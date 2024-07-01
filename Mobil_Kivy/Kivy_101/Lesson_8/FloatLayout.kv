@@ -1,0 +1,24 @@
+<Button>
+    size_hint:(0.3,0.3)
+    font_size:32
+<MyLayout>:
+    FloatLayout:
+        padding:50
+        spacing:20
+        size: root.width,root.height
+        #pos_hint:{'x','y','bottom','top','left','right'}
+        Button:
+            text:'Top Left'
+            pos_hint:{'x':0,'top':1}
+        Button:
+            text:'Top Right'
+            pos_hint:{'x':.7,'top':1}
+        Button:
+            text:'Bottom Left'
+            pos_hint:{'x':0,'bottom':1}
+        Button:
+            text:'Bottom Right'
+            pos_hint:{'x':.7,'bottom':1}
+        Button:
+            text:'Center'
+            pos_hint:{'x':0.35,'y':0.35}

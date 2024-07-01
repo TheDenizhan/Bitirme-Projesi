@@ -1,0 +1,19 @@
+<MyLayout>:
+    BoxLayout:
+        orientation:'vertical'
+        #padding:50
+        #spacing:20
+        size: root.width,root.height
+        Image:
+            source: 'Tupturuncu.jpeg'
+            allow_stretch:False
+            keep_ratio:True
+            Button:
+                text: 'Sevgi Saati'
+                background_normal:''
+                pos_hint:{'center_x':0.5}
+                size_hint:(0.3,0.3)
+                background_color:(250/255,75/255,0/255,1)
+                on_press: print('Sevgi Saati tıklandı')
+
+

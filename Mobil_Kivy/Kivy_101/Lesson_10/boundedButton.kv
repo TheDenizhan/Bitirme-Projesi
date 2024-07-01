@@ -1,0 +1,24 @@
+<MyLayout>:
+    BoxLayout:
+        orientation:'vertical'
+        size: root.width,root.height
+        background_normal:''
+        padding:50
+        spacing:20
+        Button:
+            text:"hello"
+        RoundedButton:
+            text:"goodbye"
+            pos_hint:{'center_x':.5}
+            size_hint:(.5,.3)
+
+<RoundedButton@Button>
+    background_color:(0,0,0,0)
+    background_normal:''
+    canvas.before:
+        Color:
+            rgba:(0,0,1,.5)
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius:[300]
